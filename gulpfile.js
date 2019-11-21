@@ -14,6 +14,7 @@ gulp.task('clean', async function () {
 
 gulp.task('scss', function () {
     return gulp.src('app/scss/**/*.scss')
+        // .pipe(wait(3000))
         .pipe(sass({
             outputStyle: 'compressed'
         }))
